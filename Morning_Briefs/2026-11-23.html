@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Morning Brief — Ara Fitness — 2026-11-23</title>
+<style>
+  body { margin: 0; padding: 0; background-color: #f7f6f3; font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif; color: #1f1f1f; line-height: 1.55; }
+  .wrapper { max-width: 600px; margin: 24px auto; background: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 8px 24px rgba(0,0,0,0.04); }
+  .header { background: #0a0a0a; color: #ffffff; padding: 28px 32px 24px; display: flex; justify-content: space-between; align-items: flex-start; }
+  .header-left .brand { font-size: 11px; letter-spacing: 1.8px; text-transform: uppercase; color: #a3a3a3; margin-bottom: 6px; }
+  .header-left h1 { margin: 0 0 4px; font-size: 26px; font-weight: 500; letter-spacing: -0.5px; }
+  .header-left .meta { font-size: 13px; color: #a3a3a3; }
+  .logo { font-family: "Arial Narrow", "Helvetica Neue", Arial, sans-serif; font-weight: 700; font-size: 18px; letter-spacing: 1.5px; text-transform: uppercase; color: #ffffff; line-height: 1; margin-top: 4px; }
+  .logo span { display: block; font-size: 11px; letter-spacing: 2.5px; font-weight: 500; margin-top: 2px; opacity: 0.85; }
+  .section { padding: 28px 32px; border-bottom: 1px solid #f0eeeb; }
+  .section:last-of-type { border-bottom: none; }
+  h2 { margin: 0 0 16px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 1.4px; color: #737373; }
+  .score-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 14px; }
+  .score-value { font-size: 36px; font-weight: 500; letter-spacing: -0.8px; color: #1a1a1a; line-height: 1; }
+  .score-label { font-size: 11px; color: #737373; text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 4px; }
+  .progress-wrap { margin: 0 0 6px; }
+  .progress-label { font-size: 12px; color: #737373; margin-bottom: 8px; display: flex; justify-content: space-between; }
+  .progress-container { position: relative; height: 12px; background: #f0f0f0; border-radius: 6px; overflow: visible; }
+  .progress-fill { height: 100%; border-radius: 6px; background: #0ea5e9; }
+  .target-marker { position: absolute; top: -5px; bottom: -5px; width: 2px; background: #dc2626; border-radius: 1px; z-index: 2; }
+  .components { margin-top: 20px; }
+  .comp-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #f8f8f8; font-size: 13.5px; }
+  .comp-name { color: #404040; font-weight: 500; }
+  .body-text { margin: 16px 0 0; font-size: 14px; color: #525252; }
+  .target-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .target-card { background: #fafafa; padding: 14px 16px; border-radius: 8px; }
+  .target-card.pending { opacity: 0.6; }
+  .target-card .label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.6px; color: #737373; margin-bottom: 4px; }
+  .target-card .value { font-size: 18px; font-weight: 500; color: #1a1a1a; }
+  .target-card .unit { font-size: 12px; color: #737373; margin-top: 2px; }
+  .note { margin-top: 16px; font-size: 13.5px; color: #525252; background: #fafafa; padding: 12px 14px; border-radius: 6px; border-left: 3px solid #e5e5e5; }
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  th { text-align: left; font-weight: 600; color: #737373; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; padding: 8px 0; border-bottom: 1px solid #f0eeeb; }
+  td { padding: 10px 0; border-bottom: 1px solid #f8f8f8; }
+  .day { color: #404040; font-weight: 500; width: 70px; }
+  .load-pct { font-size: 12px; }
+  .load-pct.on { color: #059669; }
+  .load-pct.under { color: #d97706; }
+  .totals { font-weight: 500; background: #fafafa; }
+  .totals td { border-bottom: none; padding: 12px 0; }
+  .footer { background: #fafafa; padding: 20px 32px; text-align: center; font-size: 12px; color: #737373; border-top: 1px solid #f0eeeb; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <div class="header-left">
+      <div class="brand">Ara Fitness</div>
+      <h1>Morning Brief</h1>
+      <div class="meta">23 November 2026 · Restart Week 8</div>
+    </div>
+    <div class="logo">ARA<span>FITNESS</span></div>
+  </div>
+
+  <div class="section">
+    <h2>Fitness Score</h2>
+    <div class="score-header">
+      <div>
+        <div class="score-label">Current</div>
+        <div class="score-value">34</div>
+      </div>
+      <div style="text-align:right">
+        <div class="score-label">Target</div>
+        <div class="score-value">35</div>
+      </div>
+      <div style="text-align:right">
+        <div class="score-label">Confidence</div>
+        <div class="score-value">78%</div>
+      </div>
+    </div>
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Week 1</span><span>Killington · Week 49</span></div>
+      <div class="progress-container">
+        <div class="progress-fill" style="width: 15.9%; background: #0ea5e9;"></div>
+        <div class="target-marker" style="left: 16.3%;"></div>
+      </div>
+    </div>
+    <div class="components">
+      <div class="comp-row"><span class="comp-name">Aerobic efficiency</span><span>19 / 40 &nbsp;·&nbsp; Nov 18 106 W NP (~28 min); 40 min planned today</span></div>
+      <div class="comp-row"><span class="comp-name">Volume & consistency</span><span>15 / 25 &nbsp;·&nbsp; last week solid; Week 8 starting</span></div>
+      <div class="comp-row"><span class="comp-name">Durability / time-on-feet</span><span>12 / 20 &nbsp;·&nbsp; Nov 21 hike 11.32 mi · 1,522 ft · 116 avg HR</span></div>
+      <div class="comp-row"><span class="comp-name">Recovery & constraints</span><span>14 / 15 &nbsp;·&nbsp; HRV 69 rebound after 64, pain quiet</span></div>
+    </div>
+    <p class="body-text">Score holds at 34 entering Restart Week 8. Recovery rebounded to 69 after the expected post-hike dip to 64. Aerobic efficiency remains anchored at the 100–110 W template from recent bike work. Durability supported by the longer 21 November hike. Volume to be built this week with the planned 40 min bike. Confidence 78%. Tracking toward the week-8 target of 35.</p>
+  </div>
+
+  <div class="section">
+    <h2>Today’s Targets</h2>
+    <div class="target-grid">
+      <div class="target-card"><div class="label">Bike · Working</div><div class="value">100–110 W</div><div class="unit">Z2 base · 40 min planned</div></div>
+      <div class="target-card pending"><div class="label">Row · Working</div><div class="value">Pending</div><div class="unit">consider HIIT Wednesday</div></div>
+      <div class="target-card pending"><div class="label">Tread · Working</div><div class="value">Pending</div><div class="unit">outdoor / run phase</div></div>
+      <div class="target-card pending"><div class="label">Run · Heart Rate</div><div class="value">Pending</div><div class="unit">Zone 2 once running starts</div></div>
+    </div>
+    <div class="note">Hold the 100–110 W bike template for the planned 40 min working session. Verify heart rate with manual pulse if the chest strap reads low. No intervals today. Recovery supports the session after the rebound. Lifts remain in the plan.</div>
+  </div>
+
+  <div class="section">
+    <h2>This Week · 23–29 November</h2>
+    <table>
+      <thead><tr><th>Day</th><th>Session</th><th>Working</th><th>Load</th></tr></thead>
+      <tbody>
+        <tr><td class="day">Mon 23</td><td>Bike (planned)</td><td>40 min · 100–110 W target</td><td><span class="load-pct">scheduled</span></td></tr>
+        <tr class="totals"><td colspan="2">Week totals</td><td>starting</td><td class="load-pct">volume to build</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>Last Week · 16–22 November</h2>
+    <table>
+      <thead><tr><th>Day</th><th>Session</th><th>Working</th><th>Load</th></tr></thead>
+      <tbody>
+        <tr><td class="day">Tue 17</td><td>Row</td><td>~7 min · 92 W NP · 126 avg HR</td><td><span class="load-pct under">short</span></td></tr>
+        <tr><td class="day">Wed 18</td><td>Bike</td><td>~28 min · 106 W NP · file 115 / manual 120–126 HR</td><td><span class="load-pct on">on target</span></td></tr>
+        <tr><td class="day">Fri 20</td><td>Row</td><td>~10 min · 85 W NP · 127 avg HR</td><td><span class="load-pct under">short</span></td></tr>
+        <tr><td class="day">Sat 21</td><td>Hike</td><td>243 min · 11.32 mi · 1,522 ft · 116 avg HR</td><td><span class="load-pct on">strong durability</span></td></tr>
+        <tr class="totals"><td colspan="2">Week totals</td><td>~17 min row + 28 min bike + 243 min hike</td><td class="load-pct on">volume solid with hike</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>Notes</h2>
+    <p class="body-text">Morning HRV (Morpheus seated) 69 on 23 November. Sequence: 58 (6) → 60 (7) → 68 (8) → 59 (10) → 59 (12) → 66 (13) → 67 (15) → 62 (16) → 67 (17) → 69 (18) → 69 (19) → 70 (21) → 64 (22) → 69 (23). Rebound after the expected dip following the longer 21 November hike (11.32 mi, 1,522 ft ascent, avg HR 116). Pain continues quiet. Planned today: 40 min working Peloton bike at the 100–110 W template. Considering HIIT on row Wednesday. 18 November bike: ~28 min working at 106 W NP; chest strap likely reading low (manual pulse checks 120–126). Short rows on 17 and 20 November. Weight assumed on plan. Hold the power target and verify HR. Trajectory toward the Killington Beast on 18 September 2027 remains favorable.</p>
+  </div>
+
+  <div class="footer">
+    Ara Fitness · Personal Training · Killington Beast 18 September 2027
+  </div>
+</div>
+</body>
+</html>
